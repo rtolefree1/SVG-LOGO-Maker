@@ -8,7 +8,7 @@ I created a Node.js command-line application that takes in user input to generat
 Because this application won’t be deployed, I have provided an link to a walkthrough video that demonstrates its functionality and passes all of the tests. 
 ## Youtube Link
 
-   [Video Submission](https://youtu.be/_xnh-8B3iro) 
+   [Video Submission](https://youtu.be/gveNXqKiNGg)
 
 > 
 

@@ -35,7 +35,17 @@ class init{
         {
             type: 'input',
             name: 'numOfLetters',
-            message: 'Please enter in your logo(up to three letters): '
+            message: 'Please enter in your logo(up to three letters): ',
+            validate (input)  
+            {
+                if(input.length > 3)
+                {
+                     return "ERROR: Please check you input is less than 3 letters"
+                }
+                
+                    return true;
+            }
+            
             
         },
         {
@@ -103,35 +113,16 @@ class init{
             
         });
 
-        // console.log('Letters input',answer.numOfLetters);
-        // console.log('color of text', answers.textColor);
-
        
     }
 
 
 
-    // renderFill()
-    // {
-    //     return `<circle cx="150" cy="100" r="80" fill="${sColor}" />`
-    // }
-
-    // renderColorLetters()
-    // {
-    //    return `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${tColor}">${nLetters}</text>`
-    // }
 
 
 
 }
 
-function checkNumberOfLetters(value)
-{
-    if(value.numOfLetters.length > 3)
-        {
-            init();
-        }
-}
 
 new init().run();
 module.exports = init
